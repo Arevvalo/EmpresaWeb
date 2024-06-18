@@ -1,0 +1,162 @@
+@font-face {
+  font-family: fuente1;
+  src: url(../fuentes/Phudu-VariableFont_wght.ttf);
+}
+body{
+  background-image: url(../Imagenes/Fondospaginas/fondonegro_grande.jpg);
+  background-size: cover;
+}
+
+.header1{
+  width: 100%;
+  height: 150px;
+  margin: auto;
+  background-color: rgba(112, 110, 110, 0.288);
+}
+#menu1{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+nav{
+  width: 230%;
+  text-align: center;
+  padding-top: 20px;
+
+}
+nav ul li{
+  font-size: 20px;
+  width: 16%;
+  margin: auto;
+  display: inline-block;
+
+}
+nav ul li a{
+  font-family: fuente1;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+
+h1{
+  font-size: 50px;
+  text-align: center;
+  font-family: fuente1;
+  color: grey;
+}
+
+
+.animacion {
+  opacity: 0;
+  animation-name: fade-up;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    color: rgb(42, 130, 165);
+    text-shadow: blue 0px 5px 10px ;
+    transform: translateY(0);
+  }
+}
+
+
+
+.BoxCatalogo{
+  border-style: solid;
+  border-color: white;
+  height: 80vh;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+
+}
+.Catalogo{
+  float: none;
+  margin: 0 auto;
+  text-align: center;
+ 
+}
+iframe{
+  width: 100%;
+  height: 80vh;
+}
+
+.header2{
+  width: 100%;
+  height: 20vh;
+  background-color: rgba(112, 110, 110, 0.288);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu2{
+  width: 100%;
+  height: 50px;
+  display: flex;
+
+  
+}
+.menu2 ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-family: fuente1;
+  font-size: 30px;
+  color: white;
+
+}
+.menu2 li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 6px 15px;
+  flex-direction:column;
+
+}
+.menu2 li ul li :hover{
+  background-color: rgba(158, 155, 155, 0.521);/*Este si marca toda la opcion*/
+}
+
+
+.menu2 li:hover{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.322);
+  color: white;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.menu2 ul li ul{
+  *display: none;
+  margin-left: -10px;
+  flex-direction: column;
+  background-color: rgba(121, 119, 119, 0.322);
+  margin-top: 1em;
+  transform: rotateY(240deg) scale(0);
+  transition: all 2s;
+}
+.menu2 ul li ul a{
+  font-family: fuente1;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu2 ul li:hover > ul{
+  transform: rotateY(0deg);
+  transition: all 1s ;
+}

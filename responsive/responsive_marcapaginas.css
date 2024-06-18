@@ -1,0 +1,14 @@
+@media (max-width: 6000px){
+    .header2{
+        display: none;
+    }
+}
+@media (max-width: 1300px){
+    .header1{
+        display: none;
+    }
+    .header2{
+        display:block;
+        position: relative;
+    }
+}

@@ -1,0 +1,45 @@
+
+@media (max-width: 6000px){
+    .header2{
+        display: none;
+    }
+}
+@media (max-width: 1300px){
+    .header1{
+        display: none;
+    }
+    .header2{
+        display:block;
+        position: relative;
+    }
+}
+@media (max-width: 580){
+    .header1{
+        display: none;
+    }
+    .header2{
+        display:block;
+        position: relative;
+    }
+    .menu2{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: inherit;
+    
+    }
+}
+@media(max-width:450px){
+    form {
+        border: 2px solid black;
+        padding: 20px;
+        width: 150px;
+    }
+    h1 {
+        font-family: fuente1;
+        color: white;
+        text-align: center;
+        animation: animacionH1 1s ease-in-out infinite alternate;
+      }
+      
+}
